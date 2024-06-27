@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System Assignment</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+
+    <div class="container py-5 mt-5">
+        <div class="form-container w-75 p-5 m-auto text-center">
+            <h2 class="text-info mb-4">Smart Login System</h2>
+
+            <div class="mb-3">
+                <input type="text" class="form-control bg-transparent text-white" id="userEmailLogin" placeholder="Enter Your Email ......">
+                <p id="emailAlert" class="d-none text-danger mt-1 w-75 m-auto alert alert-danger">include at least 3 letters starting with capital, second name is optional</p>
+            </div>
+
+            <div class="mb-3">
+                <input type="password" class="form-control bg-transparent text-white " id="userPasswordLogin" placeholder="Enter Your Password ......">
+                <p id="passwordAlert" class="d-none text-danger mt-1 w-75 m-auto alert alert-danger">include at least 3 letters starting with capital, second name is optional</p>
+            </div>
+
+            <div class="Msgs my-3 m-auto w-50">
+                <!-- <p class="alert alert-danger text-danger fw-bolder fs-5 d-none" id="fillMsg">Fill The Inputs First</p> -->
+                <p class="alert alert-warning text-danger  fw-bolder fs-5 d-none" id="checkInput">Your Email OR Password Is Incorrect</p>
+            </div>
+
+            <a class="btn btn-outline-info w-25 my-3 text-decoration-none" id="loginBtn">Login</a>
+            <p class="text-white">don't have an accoount? <a href="signUp.html" class="text-info-emphasis fw-bold fs-5 text-decoration-none ms-3">Sign Up</a></p>
+        </div>
+    </div>
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+    
+</body>
+</html>
